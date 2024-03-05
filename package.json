@@ -1,26 +1,25 @@
 {
-  "name": "galaxy",
+  "name": "galaxy-template",
   "version": "1.0.0",
-  "description": "galaxy free bootstrap blog template",
-  "author": "Themefisher",
-  "license": "MIT",
+  "description": "Vvveb Bootstrap 5 theme",
+  "author": "Ziadin Givan",
+  "license": "Apache-2.0",
+  "main": "index.js",
   "scripts": {
-    "dev": "gulp",
-    "build": "gulp build"
+    "gulp": "gulp",
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "dependencies": {
-    "browser-sync": "^2.27.10",
+  "devDependencies": {
     "gulp": "^4.0.2",
-    "gulp-autoprefixer": "^8.0.0",
+    "gulp-connect": "^5.7.0",
     "gulp-file-include": "^2.3.0",
-    "gulp-header-comment": "^0.10.0",
-    "gulp-jshint": "^2.1.0",
-    "gulp-rimraf": "^1.0.0",
+    "gulp-format-html": "^2.3.0",
+    "sass": "^1.71.1",
+    "node-sass": "^9.0.0",
+    "gulp-sass-glob": "^1.1.0",
+    "gulp-rename": "^2.0.0",
+    "gulp-image-resize": "^0.13.1",
     "gulp-sass": "^5.1.0",
-    "gulp-sourcemaps": "^3.0.0",
-    "gulp-util": "^3.0.8",
-    "jshint": "^2.13.4",
-    "jshint-stylish": "^2.2.1",
-    "sass": "^1.53.0"
+    "puppeteer": "^22.3.0 "
   }
 }

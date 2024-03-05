@@ -1,0 +1,553 @@
+<!DOCTYPE html>
+<html data-bs-theme="dark">
+
+<head>
+  <meta charset="utf-8">
+  <title>Galaxy - Personal Blog Template</title>
+
+  <!-- mobile responsive meta -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+  <!-- theme meta -->
+  <meta name="theme-name" content="galaxy" />
+
+  <!-- ** Plugins Needed for the Project ** -->
+  <!-- Bootstrap -->
+  <link rel="stylesheet" href="plugins/bootstrap/bootstrap.min.css">
+  <link rel="stylesheet" href="plugins/fontawesome/css/all.css">
+
+  <!-- Main Stylesheet -->
+  <link href="css/style.css" rel="stylesheet">
+
+  <!--Favicon-->
+  <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
+  <link rel="icon" href="images/favicon.png" type="image/x-icon">
+
+</head>
+
+<body>
+  <!-- START preloader-wrapper -->
+  <div class="preloader-wrapper">
+    <div class="preloader-inner">
+      <div class="spinner-border text-red"></div>
+    </div>
+  </div>
+  <!-- END preloader-wrapper -->
+
+  <!-- START main-wrapper -->
+  <section class="d-flex">
+
+
+    <!-- start of sidenav -->
+    <aside data-v-save-global="index.html,aside">
+      <div class="sidenav position-sticky d-flex flex-column justify-content-between">
+        <div data-v-component-site>
+          <a class="navbar-brand logo" href="/" data-v-url-params='{"host":"www.*.*"}'>
+            <span class="visually-hidden">Logo</span>
+            <img src="images/logo.png" alt="Site logo dark" loading="lazy" class="logo-default-dark" data-v-site-logo-dark>
+            <!--
+		   <img src="images/logo.png" alt="Site logo" loading="lazy" class="logo-default" data-v-site-logo>
+		   <img src="images/logo.png" alt="Site logo sticky" loading="lazy" class="logo-sticky" data-v-site-logo-sticky> 
+		   <img src="images/logo.png" alt="Site logo dark sticky" loading="lazy" class="logo-default-dark-sticky" data-v-site-logo-dark-sticky>
+		   -->
+          </a>
+        </div>
+
+
+        <div class="navbar navbar-dark my-4 p-0 font-primary" data-v-component-menu="header" data-v-slug="main-menu">
+          <ul class="navbar-nav w-100" data-v-menu-items>
+            <li class="nav-item dropdown position-static" data-v-menu-item data-v-class-if-has-dropdown="category.children > 0" data-v-class-if-position-static="category.has-text">
+
+              <a class="nav-link text-white dropdown-toggle" href="#" data-v-class-if-dropdown-toggle="category.children > 0" aria-expanded="false" data-v-menu-item-url>
+                <span data-v-menu-item-name data-v-if-not="category.type = 'text'"></span>
+                <span data-v-menu-item-content>
+                  <p>
+                    <img src="/media/vvveb.svg" height="24" alt="" class="me-2">Mega menu
+                  </p>
+                </span>
+              </a>
+
+              <div class="dropdown-menu" data-v-menu-item-recursive>
+                <div data-v-menu-item class="nav-item" data-v-class-if-dropdown="category.children > 0">
+                  <a class="dropdown-item" href="https://github.com/givanz/VvvebJs/wiki" data-v-menu-item-url>
+                    <span data-v-menu-item-name data-v-if-not="category.type = 'text'"></span>
+                    <span data-v-menu-item-content>
+                      <div class="row">
+                        <div class="col-6 align-self-center">
+                          <img src="img/demo/video-1.jpg" alt="Post" width="250" loading="lazy" class="rounded">
+                        </div>
+                        <div class="col-6">
+                          <h4>Features</h4>
+                          <p class="text-muted">Just a few mentions, but there is more</p>
+                          <ul class="list-unstyled">
+                            <li class="text-primary">Page builder</li>
+                            <li class="text-primary">Mega menu</li>
+                            <li class="text-primary">Multi language</li>
+                            <li class="text-primary">Advanced SEO</li>
+                            <li class="text-primary">Ecommerce</li>
+                          </ul>
+                        </div>
+                      </div>
+                    </span>
+                  </a>
+                </div>
+                <div data-v-menu-item class="nav-item" data-v-class-if-dropdown="category.children > 0">
+                  <a class="dropdown-item" href="https://github.com/givanz/VvvebJs/wiki" data-v-menu-item-url>
+                    <span data-v-menu-item-name data-v-if-not="category.type = 'text'">Developer Documentation</span>
+                    <span data-v-menu-item-content></span>
+                  </a>
+                </div>
+              </div>
+            </li>
+            <li class="nav-item dropdown" data-v-menu-item>
+              <a class="nav-link text-white dropdown-toggle" href="https://blog.vvveb.com" data-v-menu-item-url>
+                <span data-v-menu-item-name>Blog</span>
+              </a>
+
+              <div class="dropdown-menu" data-v-menu-item-recursive>
+                <div data-v-menu-item class="nav-item" data-v-class-if-dropdown="category.children > 0">
+                  <a class="dropdown-item" href="https://github.com/givanz/VvvebJs/wiki" data-v-menu-item-url>
+                    <span data-v-menu-item-name data-v-if-not="category.type = 'text'">User Documentation</span>
+                    <span data-v-menu-item-content></span>
+                  </a>
+                </div>
+                <div data-v-menu-item class="nav-item" data-v-class-if-dropdown="category.children > 0">
+                  <a class="dropdown-item" href="https://github.com/givanz/VvvebJs/wiki" data-v-menu-item-url>
+                    <span data-v-menu-item-name data-v-if-not="category.type = 'text'">Developer Documentation</span>
+                    <span data-v-menu-item-content></span>
+                  </a>
+                </div>
+              </div>
+            </li>
+            <li class="nav-item" data-v-menu-item>
+              <a class="nav-link text-white" href="https://www.vvveb.com/page/contact" data-v-menu-item-url>
+                <span data-v-menu-item-name>Contact</span>
+              </a>
+            </li>
+            <li class="nav-item" data-v-menu-item>
+              <a class="nav-link text-white" href="https://www.vvveb.com" data-v-menu-item-url>
+                <span data-v-menu-item-name>About us</span>
+              </a>
+            </li>
+            <!--
+	  <li class="nav-toggle">
+		@include('user-dropdown.html')
+	  </li>
+	  <li class="nav-toggle">
+		@include('cart-dropdown.html')
+	  </li>
+	  -->
+          </ul>
+
+          <div class="my-4 px-2 border border-1 border-danger-subtle" data-v-component-language>
+            <form method="post" enctype="multipart/form-data" id="form-language">
+
+              <a class="dropdown-toggle p-2 p-md-0 text-danger" data-bs-toggle="dropdown" role="button" title="Language" aria-expanded="false">
+                <!-- <i class="la la-flag me-1"></i> -->
+                <!-- 
+				<img src="" data-v-language-info-img>
+				-->
+                <span class="" data-v-language-info-name>English</span>
+              </a>
+
+
+              <div class="dropdown-menu">
+
+                <div data-v-language>
+                  <button class="dropdown-item" type="submit" value="eng" name="language" data-v-language-code>
+                    <!-- <i class="la la-flag la-lg me-2"></i> -->
+                    <img src="" loading="lazy" class="me-1" data-v-language-img>
+
+                    <!-- <a href="" data-v-language-url> -->
+                    <span data-v-language-name>English</span>
+                    <!-- </a> -->
+                  </button>
+                </div>
+
+                <div data-v-language>
+                  <button class="dropdown-item" type="submit" value="ro" name="language" data-v-language-code>
+                    <!-- <i class="la la-flag la-lg me-2"></i> -->
+                    <img src="" loading="lazy" class="me-1" data-v-language-img>
+                    <!-- <a href="" data-v-language-url>  -->
+                    <span data-v-language-name>Romanian</span>
+                    <!-- </a>  -->
+                  </button>
+                </div>
+
+              </div>
+            </form>
+          </div>
+
+          <!--
+	<div class="search-area toggle-hover">
+		<form action="/search" method="get" data-v-action="/search">
+			<input type="hidden" name="route" value="search">
+			<div class="input-group">
+				<input type="search" name="search" class="form-control" id="headerSearch" placeholder="Type for search" data-v-vvveb-action="search" data-v-vvveb-on="keyup">
+				<button class="btn border-0" type="submit" title="Search">
+					<div class="la-flip-horizontal">
+						<i class="la la-search la-lg" aria-hidden="true"></i>
+					</div>
+				</button>
+			</div>			  
+		</form>
+	</div>
+	-->
+
+        </div>
+
+        <!--
+    <div class="navbar navbar-dark my-4 p-0 font-primary" data-v-component-menu="header" data-v-slug="main-menu">
+        <ul class="navbar-nav w-100" data-v-menu-items>
+            <li class="nav-item ">
+                <a class="nav-link text-white px-0 pt-0" href="index.html">Home</a>
+            </li>
+            <li class="nav-item ">
+                <a class="nav-link text-white px-0" href="about.html">About</a>
+            </li>
+            <li class="nav-item ">
+                <a class="nav-link text-white px-0" href="contact.html">Contact</a>
+            </li>
+            <li class="nav-item active accordion">
+                <div id="drop-menu" class="drop-menu collapse">
+                    <a class="d-block " href="index-2.html">Home 2</a>
+                    <a class="d-block " href="category.html">Category</a>
+                    <a class="d-block active" href="post-details.html">Post Details</a>
+                    <a class="d-block " href="privacy.html">Privacy &amp; Policy</a>
+                </div>
+                <a class="nav-link text-white" href="#!" role="button" data-toggle="collapse" data-target="#drop-menu" aria-expanded="false" aria-controls="drop-menu">Pages</a>
+            </li>
+            <li class="nav-item mt-3">
+				
+				<div data-v-component-language>
+						<form method="post" enctype="multipart/form-data" id="form-language">
+
+							<select class="custom-select bg-transparent rounded-0 text-white shadow-none" id="pick-lang">
+								<option data-v-language data-v-language-code value="en"><span data-v-language-name>English</span></option>
+								<option data-v-language data-v-language-code value="fr"><span data-v-language-name>French</span></option>
+							</select>
+				
+						</form>
+				</div>	
+				
+            </li>
+        </ul>
+    </div>
+    -->
+        <!-- end of navbar -->
+
+        <ul class="list-inline nml-2">
+          <li class="list-inline-item">
+            <a href="#!" class="text-white text-red-onHover pr-2">
+              <span class="fab fa-twitter"></span>
+            </a>
+          </li>
+          <li class="list-inline-item">
+            <a href="#!" class="text-white text-red-onHover p-2">
+              <span class="fab fa-facebook-f"></span>
+            </a>
+          </li>
+          <li class="list-inline-item">
+            <a href="#!" class="text-white text-red-onHover p-2">
+              <span class="fab fa-instagram"></span>
+            </a>
+          </li>
+          <li class="list-inline-item">
+            <a href="#!" class="text-white text-red-onHover p-2">
+              <span class="fab fa-linkedin-in"></span>
+            </a>
+          </li>
+        </ul>
+        <!-- end of social-links -->
+      </div>
+    </aside>
+    <!-- end of sidenav -->
+
+    <div class="main-content">
+      <!-- start of mobile-nav -->
+      <header class="mobile-nav pt-4">
+        <div class="container">
+          <div class="row align-items-center">
+            <div class="col-6">
+              <a href="index.html">
+                <img src="images/logo.png" alt="">
+              </a>
+            </div>
+            <div class="col-6 text-right">
+              <button class="nav-toggle bg-transparent border text-white">
+                <span class="fas fa-bars"></span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </header>
+      <div class="nav-toggle-overlay"></div>
+      <!-- end of mobile-nav -->
+
+      <div class="container py-4 my-5" data-v-component-post>
+        <div class="row">
+          <div class="col-lg-5 col-md-8">
+            <form action="/search" method="get" data-v-action="/search" class="search-form">
+              <input type="hidden" name="route" value="search">
+              <div class="input-group">
+                <input type="search" name="search" class="form-control bg-transparent shadow-none rounded-0" placeholder="Search here">
+                <div class="input-group-append">
+                  <button class="btn" type="submit">
+                    <span class="fas fa-search"></span>
+                  </button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+
+
+        <div class="row justify-content-between">
+          <div class="col-lg-10">
+            <img class="img-fluid" src="images/post/post-single/01.png" loading="lazy" alt="" data-aos="zoom-in-up" data-aos-duration="200" data-v-post-image data-v-if="post.image">
+
+            <h1 class="text-white add-letter-space mt-4" data-v-post-name>Id reprehenderit mollit in tempor naidala incididunt cupidatat consec turades</h1>
+            <div data-v-component-content-categories data-v-post_id="url">
+              <ul class="post-meta mt-3">
+                <li class="d-inline-block mr-3">
+                  <span class="fas fa-clock text-primary"></span>
+                  <a class="ml-1" href="#" data-v-post-url>
+                    <span data-v-post-created_at data-filter-friendly_date>24 April, 2016</span>
+                  </a>
+                </li>
+                <li class="d-inline-block" data-v-cat>
+                  <span class="fas fa-list-alt text-primary"></span>
+                  <a class="ml-1" href="#" data-v-cat-url>
+                    <span data-v-cat-name>Photography</span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+
+
+            <div class="post-content" data-v-post-content>
+
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Metus cum cursus nunc nec velit volutpat consequat. Vitae dui, massa viverra nam dui laoreet ipsum. Sagittis sed feugiat blandit adipiscing mauris. Facilisis dictum in tellus ac turpis. Pretium, facilisis turpis duis pulvinar blandit est. Dolor accumsan pellentesque ullamcorper volutpat urna arcu. Nisi nulla et mauris et, ultricies odio semper gravida. Justo, lorem leo ullamcorper leo ornare phasellus. Dolor tristique sem quam eget tempor aliquet sem amet, eget. Vitae id mattis consectetur gravida sit lorem donec.</p>
+              <p>Phasellus enim sodales congue varius arcu et, pulvinar ultrices. Faucibus nulla massa erat ut. Egestas integer pharetra proin pellentesque tellus quis pulvinar mauris. Sed quisque pellentesque platea vel. Proin felis tellus nunc risus tortor, nibh. Vulputate mauris fermentum tincidunt diam sed. Vel interdum nisl, pellentesque ante consectetur. At praesent lorem placerat nibh nunc. Massa lectus id et amet quam venenatis, in mus. Arcu cras risus est porttitor tincidunt posuere feugiat. Sem velit ornare id duis Amet nullam eget mus diam nisl, vel. Sed at id quam bibendum lacus felis. Porta arcu, nunc ultricies </p>
+
+              <div class="blockquote bg-dark my-5">
+                <p class="blockquote-text pl-2">A wise girls knows her limit to touch sky.Rpelat sapiesd praesentium adipisci.The question me an idea so asered</p>
+                <span class="blockquote-footer text-white h4 mt-3">James Hopkins</span>
+              </div>
+
+              <div class="widget">
+                <h1 class="widget-title text-white d-inline-block mb-4">Text styles</h1>
+                <h1 class="h1 mb-3">H1 Heading (Barlow Condensed)</h1>
+                <h2 class="h2 mb-3">H2 Heading (Barlow Condensed)</h2>
+                <h3 class="h3 mb-3">H3 Heading (Barlow Condensed)</h3>
+                <h4 class="h4 mb-3">H4 Heading (Montserrat)</h4>
+                <h5 class="h5 mb-3">H5 Heading (Montserrat)</h5>
+                <h6 class="h6 mb-3">H6 Heading (Montserrat)</h6>
+                <!-- end headings -->
+              </div>
+
+              <div class="widget">
+                <h1 class="widget-title text-white d-inline-block mb-4">Paragraph</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Metus cum cursus nunc nec velit volutpat consequat. Vitae dui, massa viverra nam dui laoreet ipsum. Sagittis sed feugiat blandit adipiscing mauris. Facilisis dictum in tellus ac turpis. Pretium, facilisis turpis duis pulvinar blandit est. Dolor accumsan pellentesque ullamcorper volutpat urna arcu. Nisi nulla et mauris et, ultricies odio semper gravida. Justo, lorem leo ullamcorper leo ornare phasellus. Dolor tristique sem quam eget tempor aliquet sem amet, eget. Vitae id mattis consectetur </p>
+                <!-- end paragraph -->
+              </div>
+
+              <div class="widget">
+                <h1 class="widget-title text-white d-inline-block mb-4">Typefaces</h1>
+                <h3 class="font-primary mb-3">Barlow Condensed</h3>
+                <h3 class="font-secondary">Montserrat</h3>
+                <!-- end typefaces -->
+              </div>
+
+              <div class="widget">
+                <h1 class="widget-title text-white d-inline-block mb-4">Table Style</h1>
+                <table class="table table-bordered text-center text-white table-transparent">
+                  <thead class="bg-dark">
+                    <tr>
+                      <th class="h3" scope="col">Table</th>
+                      <th class="h3" scope="col">Column</th>
+                      <th class="h3" scope="col">Column</th>
+                    </tr>
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <td>Row 1.1</td>
+                      <td>Row 2.1</td>
+                      <td>Row 3.1</td>
+                    </tr>
+                    <tr>
+                      <td>Row 1.2</td>
+                      <td>Row 2.2</td>
+                      <td>Row 3.2</td>
+                    </tr>
+                    <tr>
+                      <td>Row 1.3</td>
+                      <td>Row 2.3</td>
+                      <td>Row 3.3</td>
+                    </tr>
+                  </tbody>
+                </table>
+                <!-- end table-style -->
+              </div>
+
+              <div class="widget">
+                <h1 class="widget-title text-white d-inline-block mb-4">Button</h1>
+                <div class="d-block">
+                  <a class="btn btn-primary" href="#!">Button
+                    <img src="images/arrow-right.png" alt="">
+                  </a>
+                </div>
+                <!-- end buttons -->
+              </div>
+
+              <div class="widget">
+                <h1 class="widget-title text-white d-inline-block">Colors</h1>
+                <div class="row text-center">
+                  <div class="col-sm-3 mt-4">
+                    <div class="rounded">
+                      <div class="bg-black py-5"></div>
+                      <p class="bg-dark py-2">000000</p>
+                    </div>
+                  </div>
+                  <div class="col-sm-3 mt-4">
+                    <div class="rounded">
+                      <div class="bg-primary py-5"></div>
+                      <p class="bg-dark py-2">EDEDED</p>
+                    </div>
+                  </div>
+                  <div class="col-sm-3 mt-4">
+                    <div class="rounded">
+                      <div class="bg-dark py-5"></div>
+                      <p class="bg-dark py-2">1D1C21</p>
+                    </div>
+                  </div>
+                  <div class="col-sm-3 mt-4">
+                    <div class="rounded">
+                      <div class="bg-dark-gray py-5"></div>
+                      <p class="bg-dark py-2">CBCBCB</p>
+                    </div>
+                  </div>
+                  <div class="col-sm-3 mt-4">
+                    <div class="rounded">
+                      <div class="bg-white py-5"></div>
+                      <p class="bg-dark py-2">FFFFFF</p>
+                    </div>
+                  </div>
+                  <div class="col-sm-3 mt-4">
+                    <div class="rounded">
+                      <div class="bg-gray py-5"></div>
+                      <p class="bg-dark py-2">B0B0B0</p>
+                    </div>
+                  </div>
+                  <div class="col-sm-3 mt-4">
+                    <div class="rounded">
+                      <div class="bg-black-700-darken py-5"></div>
+                      <p class="bg-dark py-2">737373</p>
+                    </div>
+                  </div>
+                </div>
+                <!-- end colors -->
+              </div>
+
+            </div>
+          </div>
+
+
+
+
+
+        </div>
+      </div>
+
+      <!-- start of footer -->
+      <footer class="bg-dark" data-v-save-global="index.html,footer">
+        <div class="container">
+          <div class="row text-center">
+            <div class="col-lg-3 col-sm-6 mb-5">
+              <h5 class="font-primary text-white mb-4">Inspirations</h5>
+              <ul class="list-unstyled">
+                <li>
+                  <a href="#!">Privacy State</a>
+                </li>
+                <li>
+                  <a href="#!">Privacy</a>
+                </li>
+                <li>
+                  <a href="#!">State</a>
+                </li>
+                <li>
+                  <a href="#!">Privacy</a>
+                </li>
+              </ul>
+            </div>
+            <div class="col-lg-3 col-sm-6 mb-5">
+              <h5 class="font-primary text-white mb-4">Templates</h5>
+              <ul class="list-unstyled">
+                <li>
+                  <a href="#!">Privacy State</a>
+                </li>
+                <li>
+                  <a href="#!">Privacy</a>
+                </li>
+                <li>
+                  <a href="#!">State</a>
+                </li>
+                <li>
+                  <a href="#!">Privacy</a>
+                </li>
+              </ul>
+            </div>
+            <div class="col-lg-3 col-sm-6 mb-5">
+              <h5 class="font-primary text-white mb-4">Resource</h5>
+              <ul class="list-unstyled">
+                <li>
+                  <a href="#!">Privacy State</a>
+                </li>
+                <li>
+                  <a href="#!">Privacy</a>
+                </li>
+                <li>
+                  <a href="#!">State</a>
+                </li>
+                <li>
+                  <a href="#!">Privacy</a>
+                </li>
+              </ul>
+            </div>
+            <div class="col-lg-3 col-sm-6 mb-5">
+              <h5 class="font-primary text-white mb-4">Company</h5>
+              <ul class="list-unstyled">
+                <li>
+                  <a href="#!">Privacy State</a>
+                </li>
+                <li>
+                  <a href="#!">Privacy</a>
+                </li>
+                <li>
+                  <a href="#!">State</a>
+                </li>
+                <li>
+                  <a href="#!">Privacy</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </footer>
+      <!-- end of footer -->
+
+    </div>
+
+  </section>
+  <!-- END main-wrapper -->
+
+  <!-- All JS Files -->
+  <script src="plugins/jQuery/jquery.min.js"></script>
+  <script src="plugins/bootstrap/bootstrap.min.js"></script>
+
+  <!-- Main Script -->
+  <script src="js/script.js"></script>
+</body>
+
+</html>

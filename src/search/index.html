@@ -1,0 +1,28 @@
+@@include('../_includes/header.html')
+@@include('../_includes/sidenav.html',{'home':'', 'about':'', 'contact':'', 'pages':'active', 'home2':'active', 'category':'', 'postDetails':'', 'pnp':''})
+    <div class="main-content">
+        @@include('../_includes/mobile-nav.html')
+
+            <div class="container py-4 my-5">
+				<div class="col-md-7">
+					<h2 class="fs-normal my-4" data-v-if="this.search != ''">Results for: <strong data-v-search>term</strong></h2>
+					<h2 class="fs-normal my-4" data-v-if="this.search == ''">No search query provided!</h2>
+					
+					@@include('../_includes/search-form.html')
+					<div data-v-component-posts  data-v-limit="3" data-v-search="url" data-v-type="">
+						@@include('../_includes/post.html')
+
+						<div data-v-if="posts.count < 1">
+							<h3 class="text-center py-4 bg-body-tertiary">No posts to display!</h3>
+						</div>
+						
+						@@include('../_includes/pagination.html', {"component": "posts", "component-index":0})	
+
+					</div>
+				</div>
+            </div>
+
+        @@include('../_includes/footer-block.html')
+    </div>
+
+@@include('../_includes/footer.html')

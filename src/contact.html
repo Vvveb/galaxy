@@ -1,0 +1,80 @@
+@@include('_includes/header.html')
+@@include('_includes/sidenav.html',{'home':'', 'about':'', 'contact':'active', 'pages':'', 'home2':'', 'category':'', 'postDetails':'', 'pnp':''})
+    <div class="main-content">
+
+        @@include('_includes/mobile-nav.html')
+
+        <div class="container py-4 my-5">
+            @@include('_includes/search-form.html')
+            <div class="row">
+                <div class="col-md-10">
+                    <div class="contact-form bg-dark" data-v-component-plugin-contact-form-form data-v-storage="database" data-v-name="contact-us">
+                        <h1 class="text-white add-letter-space mb-5">Lets Contact Us</h1>
+                        
+                        @@include('_includes/notifications.html')
+                        
+                        <form method="POST" class="needs-validation" novalidate>
+							<input type="hidden" class="form-control" placeholder="First name" name="firstname-empty">	
+							
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="form-group mb-5">
+                                        <label for="firstName" class="text-black-300">Your First Name</label>
+                                        <input type="text" id="firstName" name="firstname"  class="form-control bg-transparent rounded-0 border-bottom shadow-none pb-15 px-0" placeholder="Robert Lee" required>
+                                        <p class="invalid-feedback">Your first-name is required!</p>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group mb-5">
+                                        <label for="lastName" class="text-black-300">Your Last Name</label>
+                                        <input type="text" id="lastName" name="lastname" class="form-control bg-transparent rounded-0 border-bottom shadow-none pb-15 px-0" placeholder="Anderson" required>
+                                        <p class="invalid-feedback">Your last-name is required!</p>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group mb-5">
+                                        <label for="email" class="text-black-300">E-Mail Address</label>
+                                        <input type="email" id="email" name="email" class="form-control bg-transparent rounded-0 border-bottom shadow-none pb-15 px-0" placeholder="kevin.jones@mail.com" required>
+                                        <p class="invalid-feedback">Your email is required!</p>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group mb-5">
+                                        <label class="text-black-300">What Is This About?</label>
+                                        <select class="d-block w-100" name="subject">
+                                            <option value="Personal">Personal Proposal</option>
+                                            <option value="Business">Business Purpose</option>
+                                            <option value="Hello">Want to say hello</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="col-md-12">
+                                    <div class="form-group mb-5">
+                                        <label for="message" class="text-black-300">Your message</label>
+                                        <textarea name="message" name="message"class="form-control bg-transparent rounded-0 border-bottom shadow-none pb-15 px-0" placeholder="Lorem Ipsum is simply dummy text of the printing and..." required></textarea>
+                                        <p class="invalid-feedback">Message is required!</p>
+                                    </div>
+                                </div>
+                                
+                                 <!-- if these hidden inputs are filled then ignore, robots -->
+
+								 <input type="text" class="form-control d-none" placeholder="Contact form" name="contact-form" >	
+								 
+								 <input type="text" class="form-control d-none" placeholder="Subject" name="subject-empty" >	
+								 
+								 <input type="text" class="form-control visually-hidden" placeholder="Last name" name="lastname-empty" tabindex="-1">	
+								 
+                                
+                                <div class="col-md-12">
+                                    <button type="submit" class="btn btn-sm btn-primary">Send Now <img src="images/arrow-right.png" alt=""></button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        @@include('_includes/footer-block.html')
+    </div>
+@@include('_includes/footer.html')

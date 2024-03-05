@@ -1,0 +1,79 @@
+<div data-v-component-posts  data-v-limit="3" data-v-categories="3">
+	<div class="card post-item bg-transparent border-0 mb-5" data-v-post>
+		<a href="post-details.html" data-v-post-url>
+			<img class="card-img-top rounded-0" src="images/post/post-lg/01.png" alt="" data-v-post-image data-v-if="post.image">
+		</a>
+		<div class="card-body px-0">
+			<h2 class="card-title">
+				<a class="text-white opacity-75-onHover" href="post-details.html" data-v-post-url><span data-v-post-name>Id reprehrenderit mollit in tempor naid incididunt cupidatat consectetura</span></a>
+			</h2>
+			<ul class="post-meta mt-3" data-v-categories>
+				<li class="d-inline-block mr-3">
+					<span class="fas fa-clock text-primary"></span>
+					<a class="ml-1" href="#"  data-v-post-url><span data-v-post-created_at data-filter-friendly_date>24 April, 2016</span></a>
+				</li>
+				<li class="d-inline-block" data-v-categories-cat>
+					<span class="fas fa-list-alt text-primary"></span>
+					<a class="ml-1" href="#" data-v-categories-cat-url><span data-v-categories-cat-name>Photography</span></a>
+				</li>
+			</ul>
+			<p class="card-text my-4" data-v-post-excerpt>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tincidunt leo mi, viverra urna. Arcu velit risus, condimentum ut vulputate cursus porttitor turpis in. Diam egestas nec massa, habitasse. Tincidt dui.</p>
+			<a href="post-details.html" class="btn btn-primary" data-v-post-url><span>Read More</span> <img src="images/arrow-right.png" alt=""></a>
+		</div>
+	</div>
+	<!-- end of post-item -->
+	
+	<div class="card post-item bg-transparent border-0 mb-5" data-v-post>
+		<a href="post-details.html" data-v-post-url>
+			<img class="card-img-top rounded-0" src="images/post/post-lg/02.png" alt="" data-v-post-image data-v-if="post.image">
+		</a>
+		<div class="card-body px-0">
+			<h2 class="card-title">
+				<a class="text-white opacity-75-onHover" href="post-details.html" data-v-post-url><span data-v-post-name>Excepteur ado Do minim duis laborum Fugiat ea labore qui veniam labore</span></a>
+			</h2>
+			<ul class="post-meta mt-3">
+				<li class="d-inline-block mr-3">
+					<span class="fas fa-clock text-primary"></span>
+					<a class="ml-1" href="#">24 April, 2016</a>
+				</li>
+				<li class="d-inline-block">
+					<span class="fas fa-list-alt text-primary"></span>
+					<a class="ml-1" href="#">Photography</a>
+				</li>
+			</ul>
+			<p class="card-text my-4" data-v-post-excerpt>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tincidunt leo mi, viverra urna. Arcu velit risus, condimentum ut vulputate cursus porttitor turpis in. Diam egestas nec massa, habitasse. Tincidt dui.</p>
+			<a href="post-details.html" class="btn btn-primary" data-v-post-url><span>Read More</span> <img src="images/arrow-right.png" alt=""></a>
+		</div>
+	</div>
+	<!-- end of post-item -->
+	
+	<div class="card post-item bg-transparent border-0 mb-5" data-v-post>
+		<a href="post-details.html" data-v-post-url>
+			<img class="card-img-top rounded-0" src="images/post/post-lg/03.png" alt="" data-v-post-image data-v-if="post.image">
+		</a>
+		<div class="card-body px-0">
+			<h2 class="card-title">
+				<a class="text-white opacity-75-onHover" href="post-details.html" data-v-post-url><span data-v-post-name>Aliquip excepteur cilludm irure laboris sint ea qui ex amet id. Ex nulla etno</span></a>
+			</h2>
+			<ul class="post-meta mt-3">
+				<li class="d-inline-block mr-3">
+					<span class="fas fa-clock text-primary"></span>
+					<a class="ml-1" href="#">24 April, 2016</a>
+				</li>
+				<li class="d-inline-block">
+					<span class="fas fa-list-alt text-primary"></span>
+					<a class="ml-1" href="#">Photography</a>
+				</li>
+			</ul>
+			<p class="card-text my-4" data-v-post-excerpt>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Tincidunt leo mi, viverra urna. Arcu velit risus, condimentum ut vulputate cursus porttitor turpis in. Diam egestas nec massa, habitasse. Tincidt dui.</p>
+			<a href="post-details.html" class="btn btn-primary" data-v-post-url><span>Read More</span> <img src="images/arrow-right.png" alt=""></a>
+		</div>
+	</div>
+	<!-- end of post-item -->
+	
+	<div data-v-if="posts.count < 1">
+		<h3 class="text-center py-4 bg-body-tertiary">No posts to display!</h3>
+	</div>
+	
+	@@include('../_includes/pagination.html', {"component": "posts", "component-index":0})	
+</div>

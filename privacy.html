@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html data-bs-theme="dark">
+
+<head>
+  <meta charset="utf-8">
+  <title>Galaxy - Personal Blog Template</title>
+
+  <!-- mobile responsive meta -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+  <!-- theme meta -->
+  <meta name="theme-name" content="galaxy" />
+
+  <!-- ** Plugins Needed for the Project ** -->
+  <!-- Bootstrap -->
+  <link rel="stylesheet" href="plugins/bootstrap/bootstrap.min.css">
+  <link rel="stylesheet" href="plugins/fontawesome/css/all.css">
+
+  <!-- Main Stylesheet -->
+  <link href="css/style.css" rel="stylesheet">
+
+  <!--Favicon-->
+  <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
+  <link rel="icon" href="images/favicon.png" type="image/x-icon">
+
+</head>
+
+<body>
+  <!-- START preloader-wrapper -->
+  <div class="preloader-wrapper">
+    <div class="preloader-inner">
+      <div class="spinner-border text-red"></div>
+    </div>
+  </div>
+  <!-- END preloader-wrapper -->
+
+  <!-- START main-wrapper -->
+  <section class="d-flex">
+
+
+    <!-- start of sidenav -->
+    <aside data-v-save-global="index.html,aside">
+      <div class="sidenav position-sticky d-flex flex-column justify-content-between">
+        <div data-v-component-site>
+          <a class="navbar-brand logo" href="/" data-v-url-params='{"host":"www.*.*"}'>
+            <span class="visually-hidden">Logo</span>
+            <img src="images/logo.png" alt="Site logo dark" loading="lazy" class="logo-default-dark" data-v-site-logo-dark>
+            <!--
+		   <img src="images/logo.png" alt="Site logo" loading="lazy" class="logo-default" data-v-site-logo>
+		   <img src="images/logo.png" alt="Site logo sticky" loading="lazy" class="logo-sticky" data-v-site-logo-sticky> 
+		   <img src="images/logo.png" alt="Site logo dark sticky" loading="lazy" class="logo-default-dark-sticky" data-v-site-logo-dark-sticky>
+		   -->
+          </a>
+        </div>
+
+
+        <div class="navbar navbar-dark my-4 p-0 font-primary" data-v-component-menu="header" data-v-slug="main-menu">
+          <ul class="navbar-nav w-100" data-v-menu-items>
+            <li class="nav-item dropdown position-static" data-v-menu-item data-v-class-if-has-dropdown="category.children > 0" data-v-class-if-position-static="category.has-text">
+
+              <a class="nav-link text-white dropdown-toggle" href="#" data-v-class-if-dropdown-toggle="category.children > 0" aria-expanded="false" data-v-menu-item-url>
+                <span data-v-menu-item-name data-v-if-not="category.type = 'text'"></span>
+                <span data-v-menu-item-content>
+                  <p>
+                    <img src="/media/vvveb.svg" height="24" alt="" class="me-2">Mega menu
+                  </p>
+                </span>
+              </a>
+
+              <div class="dropdown-menu" data-v-menu-item-recursive>
+                <div data-v-menu-item class="nav-item" data-v-class-if-dropdown="category.children > 0">
+                  <a class="dropdown-item" href="https://github.com/givanz/VvvebJs/wiki" data-v-menu-item-url>
+                    <span data-v-menu-item-name data-v-if-not="category.type = 'text'"></span>
+                    <span data-v-menu-item-content>
+                      <div class="row">
+                        <div class="col-6 align-self-center">
+                          <img src="img/demo/video-1.jpg" alt="Post" width="250" loading="lazy" class="rounded">
+                        </div>
+                        <div class="col-6">
+                          <h4>Features</h4>
+                          <p class="text-muted">Just a few mentions, but there is more</p>
+                          <ul class="list-unstyled">
+                            <li class="text-primary">Page builder</li>
+                            <li class="text-primary">Mega menu</li>
+                            <li class="text-primary">Multi language</li>
+                            <li class="text-primary">Advanced SEO</li>
+                            <li class="text-primary">Ecommerce</li>
+                          </ul>
+                        </div>
+                      </div>
+                    </span>
+                  </a>
+                </div>
+                <div data-v-menu-item class="nav-item" data-v-class-if-dropdown="category.children > 0">
+                  <a class="dropdown-item" href="https://github.com/givanz/VvvebJs/wiki" data-v-menu-item-url>
+                    <span data-v-menu-item-name data-v-if-not="category.type = 'text'">Developer Documentation</span>
+                    <span data-v-menu-item-content></span>
+                  </a>
+                </div>
+              </div>
+            </li>
+            <li class="nav-item dropdown" data-v-menu-item>
+              <a class="nav-link text-white dropdown-toggle" href="https://blog.vvveb.com" data-v-menu-item-url>
+                <span data-v-menu-item-name>Blog</span>
+              </a>
+
+              <div class="dropdown-menu" data-v-menu-item-recursive>
+                <div data-v-menu-item class="nav-item" data-v-class-if-dropdown="category.children > 0">
+                  <a class="dropdown-item" href="https://github.com/givanz/VvvebJs/wiki" data-v-menu-item-url>
+                    <span data-v-menu-item-name data-v-if-not="category.type = 'text'">User Documentation</span>
+                    <span data-v-menu-item-content></span>
+                  </a>
+                </div>
+                <div data-v-menu-item class="nav-item" data-v-class-if-dropdown="category.children > 0">
+                  <a class="dropdown-item" href="https://github.com/givanz/VvvebJs/wiki" data-v-menu-item-url>
+                    <span data-v-menu-item-name data-v-if-not="category.type = 'text'">Developer Documentation</span>
+                    <span data-v-menu-item-content></span>
+                  </a>
+                </div>
+              </div>
+            </li>
+            <li class="nav-item" data-v-menu-item>
+              <a class="nav-link text-white" href="https://www.vvveb.com/page/contact" data-v-menu-item-url>
+                <span data-v-menu-item-name>Contact</span>
+              </a>
+            </li>
+            <li class="nav-item" data-v-menu-item>
+              <a class="nav-link text-white" href="https://www.vvveb.com" data-v-menu-item-url>
+                <span data-v-menu-item-name>About us</span>
+              </a>
+            </li>
+            <!--
+	  <li class="nav-toggle">
+		@include('user-dropdown.html')
+	  </li>
+	  <li class="nav-toggle">
+		@include('cart-dropdown.html')
+	  </li>
+	  -->
+          </ul>
+
+          <div class="my-4 px-2 border border-1 border-danger-subtle" data-v-component-language>
+            <form method="post" enctype="multipart/form-data" id="form-language">
+
+              <a class="dropdown-toggle p-2 p-md-0 text-danger" data-bs-toggle="dropdown" role="button" title="Language" aria-expanded="false">
+                <!-- <i class="la la-flag me-1"></i> -->
+                <!-- 
+				<img src="" data-v-language-info-img>
+				-->
+                <span class="" data-v-language-info-name>English</span>
+              </a>
+
+
+              <div class="dropdown-menu">
+
+                <div data-v-language>
+                  <button class="dropdown-item" type="submit" value="eng" name="language" data-v-language-code>
+                    <!-- <i class="la la-flag la-lg me-2"></i> -->
+                    <img src="" loading="lazy" class="me-1" data-v-language-img>
+
+                    <!-- <a href="" data-v-language-url> -->
+                    <span data-v-language-name>English</span>
+                    <!-- </a> -->
+                  </button>
+                </div>
+
+                <div data-v-language>
+                  <button class="dropdown-item" type="submit" value="ro" name="language" data-v-language-code>
+                    <!-- <i class="la la-flag la-lg me-2"></i> -->
+                    <img src="" loading="lazy" class="me-1" data-v-language-img>
+                    <!-- <a href="" data-v-language-url>  -->
+                    <span data-v-language-name>Romanian</span>
+                    <!-- </a>  -->
+                  </button>
+                </div>
+
+              </div>
+            </form>
+          </div>
+
+          <!--
+	<div class="search-area toggle-hover">
+		<form action="/search" method="get" data-v-action="/search">
+			<input type="hidden" name="route" value="search">
+			<div class="input-group">
+				<input type="search" name="search" class="form-control" id="headerSearch" placeholder="Type for search" data-v-vvveb-action="search" data-v-vvveb-on="keyup">
+				<button class="btn border-0" type="submit" title="Search">
+					<div class="la-flip-horizontal">
+						<i class="la la-search la-lg" aria-hidden="true"></i>
+					</div>
+				</button>
+			</div>			  
+		</form>
+	</div>
+	-->
+
+        </div>
+
+        <!--
+    <div class="navbar navbar-dark my-4 p-0 font-primary" data-v-component-menu="header" data-v-slug="main-menu">
+        <ul class="navbar-nav w-100" data-v-menu-items>
+            <li class="nav-item ">
+                <a class="nav-link text-white px-0 pt-0" href="index.html">Home</a>
+            </li>
+            <li class="nav-item ">
+                <a class="nav-link text-white px-0" href="about.html">About</a>
+            </li>
+            <li class="nav-item ">
+                <a class="nav-link text-white px-0" href="contact.html">Contact</a>
+            </li>
+            <li class="nav-item active accordion">
+                <div id="drop-menu" class="drop-menu collapse">
+                    <a class="d-block " href="index-2.html">Home 2</a>
+                    <a class="d-block " href="category.html">Category</a>
+                    <a class="d-block " href="post-details.html">Post Details</a>
+                    <a class="d-block active" href="privacy.html">Privacy &amp; Policy</a>
+                </div>
+                <a class="nav-link text-white" href="#!" role="button" data-toggle="collapse" data-target="#drop-menu" aria-expanded="false" aria-controls="drop-menu">Pages</a>
+            </li>
+            <li class="nav-item mt-3">
+				
+				<div data-v-component-language>
+						<form method="post" enctype="multipart/form-data" id="form-language">
+
+							<select class="custom-select bg-transparent rounded-0 text-white shadow-none" id="pick-lang">
+								<option data-v-language data-v-language-code value="en"><span data-v-language-name>English</span></option>
+								<option data-v-language data-v-language-code value="fr"><span data-v-language-name>French</span></option>
+							</select>
+				
+						</form>
+				</div>	
+				
+            </li>
+        </ul>
+    </div>
+    -->
+        <!-- end of navbar -->
+
+        <ul class="list-inline nml-2">
+          <li class="list-inline-item">
+            <a href="#!" class="text-white text-red-onHover pr-2">
+              <span class="fab fa-twitter"></span>
+            </a>
+          </li>
+          <li class="list-inline-item">
+            <a href="#!" class="text-white text-red-onHover p-2">
+              <span class="fab fa-facebook-f"></span>
+            </a>
+          </li>
+          <li class="list-inline-item">
+            <a href="#!" class="text-white text-red-onHover p-2">
+              <span class="fab fa-instagram"></span>
+            </a>
+          </li>
+          <li class="list-inline-item">
+            <a href="#!" class="text-white text-red-onHover p-2">
+              <span class="fab fa-linkedin-in"></span>
+            </a>
+          </li>
+        </ul>
+        <!-- end of social-links -->
+      </div>
+    </aside>
+    <!-- end of sidenav -->
+
+    <div class="main-content">
+      <!-- start of mobile-nav -->
+      <header class="mobile-nav pt-4">
+        <div class="container">
+          <div class="row align-items-center">
+            <div class="col-6">
+              <a href="index.html">
+                <img src="images/logo.png" alt="">
+              </a>
+            </div>
+            <div class="col-6 text-right">
+              <button class="nav-toggle bg-transparent border text-white">
+                <span class="fas fa-bars"></span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </header>
+      <div class="nav-toggle-overlay"></div>
+      <!-- end of mobile-nav -->
+
+      <div class="container py-4 my-5">
+        <div class="row">
+          <div class="col-lg-5 col-md-8">
+            <form action="/search" method="get" data-v-action="/search" class="search-form">
+              <input type="hidden" name="route" value="search">
+              <div class="input-group">
+                <input type="search" name="search" class="form-control bg-transparent shadow-none rounded-0" placeholder="Search here">
+                <div class="input-group-append">
+                  <button class="btn" type="submit">
+                    <span class="fas fa-search"></span>
+                  </button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-md-9">
+            <h1 class="text-white add-letter-space mb-3">Privacy &amp; Policy</h1>
+            <p class="mb-5">bottom line is it’s our aim to always take care of both of us,
+              <br>Please read this terms and stated below, goodies Byes.
+            </p>
+            <ul class="list-unstyled">
+              <li class="bullet-list-item mb-5">
+                <h3 class="text-white mb-3 add-letter-space">Building software shouldn't be so hard</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Purus, donec nunc eros, ullamcorper id feugiat quisque aliquam sagittis. Sem turpis sed viverra massa gravida pharetra. Non dui dolor potenti eu dignissim fusce. Ultrices amet, in curabitur a arcu a lectus morbi id. Iaculis erat sagittis in tortor cursus. Molestie urna eu tortor, erat scelerisque eget. Nunc hendrerit sed interdum lacus. Lorem quis viverra sed</p>
+                <p class="mt-4">pretium, aliquam sit. Praesent elementum magna amet, tincidunt eros, nibh in leo. Malesuada purus, lacus, at aliquam suspendisse tempus. Quis tempus amet, velit nascetur sollicitudin. At sollicitudin eget amet in. Eu velit nascetur sollicitudin erhdfvssfvrgss eget viverra nec elementum. Lacus, facilisis tristique lectus in.
+                </p>
+              </li>
+              <li class="bullet-list-item mb-5">
+                <h3 class="text-white mb-3 add-letter-space">You should get something working on day one</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Purus, donec nunc eros, ullamcorper id feugiat quisque aliquam sagittis. Sem turpis sed viverra massa gravida pharetra. Non dui dolor potenti eu dignissim fusce. Ultrices amet, in curabitur a arcu a lectus morbi id. Iaculis erat sagittis in tortor cursus. Molestie urna eu tortor erat.</p>
+              </li>
+              <li class="bullet-list-item mb-5">
+                <h3 class="text-white mb-3 add-letter-space">Don't reimplement the wheel</h3>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Purus, donec nunc eros, ullamcorper id feugiat quisque aliquam sagittis. Sem turpis sed viverra massa gravida pharetra. Non dui dolor potenti eu dignissim fusce. Ultrices amet, in curabitur a arcu a lectus morbi id. Iaculis erat sagittis in tortor cursus.</p>
+                <p class="mt-4">Molestie urna eu tortor, erat scelerisque eget. Nunc hendrerit sed interdum lacus. Lorem quis viverra sed Lorem ipsum dolor sit amet, consectetur adipiscing elit. Purus, donec nunc eros, ullamcorper id feugiat </p>
+              </li>
+              <li class="bullet-list-item">
+                <h3 class="text-white mb-3 add-letter-space">You should get working on day one</h3>
+                <ol class="pl-0">
+                  <li class="mb-2">Sll the Themefisher items are designed to be with the latest , We check all.</li>
+                  <li class="mb-2">Comments that threaten or harm the reputation of any person or organization</li>
+                  <li class="mb-2">Personal information including, but limited to, email addresses, telephone numbers</li>
+                  <li>Any Update come in The technology Customer will get automatic Notification.</li>
+                </ol>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- start of footer -->
+      <footer class="bg-dark" data-v-save-global="index.html,footer">
+        <div class="container">
+          <div class="row text-center">
+            <div class="col-lg-3 col-sm-6 mb-5">
+              <h5 class="font-primary text-white mb-4">Inspirations</h5>
+              <ul class="list-unstyled">
+                <li>
+                  <a href="#!">Privacy State</a>
+                </li>
+                <li>
+                  <a href="#!">Privacy</a>
+                </li>
+                <li>
+                  <a href="#!">State</a>
+                </li>
+                <li>
+                  <a href="#!">Privacy</a>
+                </li>
+              </ul>
+            </div>
+            <div class="col-lg-3 col-sm-6 mb-5">
+              <h5 class="font-primary text-white mb-4">Templates</h5>
+              <ul class="list-unstyled">
+                <li>
+                  <a href="#!">Privacy State</a>
+                </li>
+                <li>
+                  <a href="#!">Privacy</a>
+                </li>
+                <li>
+                  <a href="#!">State</a>
+                </li>
+                <li>
+                  <a href="#!">Privacy</a>
+                </li>
+              </ul>
+            </div>
+            <div class="col-lg-3 col-sm-6 mb-5">
+              <h5 class="font-primary text-white mb-4">Resource</h5>
+              <ul class="list-unstyled">
+                <li>
+                  <a href="#!">Privacy State</a>
+                </li>
+                <li>
+                  <a href="#!">Privacy</a>
+                </li>
+                <li>
+                  <a href="#!">State</a>
+                </li>
+                <li>
+                  <a href="#!">Privacy</a>
+                </li>
+              </ul>
+            </div>
+            <div class="col-lg-3 col-sm-6 mb-5">
+              <h5 class="font-primary text-white mb-4">Company</h5>
+              <ul class="list-unstyled">
+                <li>
+                  <a href="#!">Privacy State</a>
+                </li>
+                <li>
+                  <a href="#!">Privacy</a>
+                </li>
+                <li>
+                  <a href="#!">State</a>
+                </li>
+                <li>
+                  <a href="#!">Privacy</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </footer>
+      <!-- end of footer -->
+
+    </div>
+
+  </section>
+  <!-- END main-wrapper -->
+
+  <!-- All JS Files -->
+  <script src="plugins/jQuery/jquery.min.js"></script>
+  <script src="plugins/bootstrap/bootstrap.min.js"></script>
+
+  <!-- Main Script -->
+  <script src="js/script.js"></script>
+</body>
+
+</html>

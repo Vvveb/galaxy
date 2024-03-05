@@ -1,0 +1,16 @@
+@@include('_includes/header.html')
+@@include('_includes/sidenav.html',{'home':'', 'about':'', 'contact':'', 'pages':'active', 'home2':'active', 'category':'', 'postDetails':'', 'pnp':''})
+    <div class="main-content">
+        @@include('_includes/mobile-nav.html')
+
+            <div class="container py-4 my-5">
+				<div class="col-md-7">
+					@@include('_includes/search-form.html')
+					@@include('_includes/posts.html')
+				</div>
+            </div>
+
+        @@include('_includes/footer-block.html')
+    </div>
+
+@@include('_includes/footer.html')
